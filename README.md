@@ -4,7 +4,7 @@ A QML wrapper for c++ Network class with loading functionality and optional toke
 This is just a quick implementation, so make sure to double check the code before using it in production
 
 a quick example 
-'''
+```QML
 Item{
   width: 100
   height: 100
@@ -38,4 +38,4 @@ Item{
       }
     }
   }
-'''
+```
