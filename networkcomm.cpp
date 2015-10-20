@@ -53,7 +53,7 @@ void NetworkComm::addParam(QString key, const QByteArray value){
     //params.addQueryItem(key,value);
 }
 
-void NetworkComm::sendPostRequest(QString addr){    
+void NetworkComm::sendPostRequest(QString addr){
 
     QByteArray qbt;
     QByteArray token_inqba;
@@ -81,7 +81,7 @@ void NetworkComm::sendPostRequest(QString addr){
 }
 
 void NetworkComm::setToken(const QString &t){
-    qDebug()<<"Will set the token: ";
+    //qDebug()<<"Will set the token: ";
     if (t != m_token) {
         m_token = t;
         emit tokenChanged();
@@ -109,6 +109,7 @@ void NetworkComm::finishedSlot(QNetworkReply * reply){
     multiPart = new QHttpMultiPart(QHttpMultiPart::FormDataType);
 
 }
+
 
 
 

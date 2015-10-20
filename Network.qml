@@ -42,8 +42,16 @@ Item {
         running: false
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
-        width: parent.width/2
-        height: parent.height/2
+        //width: parent.width/2
+        //height: parent.height/2
+    }
+
+    MouseArea{
+        anchors.fill: parent
+        visible: busy_indicator.running
+        onClicked: {
+            console.debug("cannot click while loading")
+        }
     }
 
     MessageDialog{
@@ -75,4 +83,5 @@ Item {
         }
     }
 }
+
 
